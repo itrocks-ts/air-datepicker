@@ -7,7 +7,7 @@
 		"@itrocks/asset-loader": "latest",
 		"air-datepicker": "^3.5"
 	},
-	"description": "",
+	"description": "Simplifies the integration of the air-datepicker component into a web page",
 	"devDependencies": {
 		"@types/node": "^22.9",
 		"typescript": "5.6"
@@ -46,5 +46,5 @@
 	},
 	"type": "module",
 	"types": "./air-datepicker.d.ts",
-	"version": "0.0.2"
+	"version": "0.0.3"
 }
