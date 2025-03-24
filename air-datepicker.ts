@@ -20,7 +20,7 @@ function init(input: HTMLInputElement)
 	}, true)
 }
 
-export default (input: HTMLInputElement) =>
+export function airDatePicker(input: HTMLInputElement)
 {
 	loadCss('/node_modules/air-datepicker/air-datepicker.css')
 	loadScript('/node_modules/air-datepicker/air-datepicker.js', () => init(input))
