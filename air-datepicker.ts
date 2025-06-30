@@ -4,7 +4,9 @@ const locales: Record<string, object> = {}
 
 function init(input: HTMLInputElement)
 {
-	const locale = locales[document.documentElement.lang]
+	// @ts-ignore defined by loadScript('air-datepicker.js'). init() is called after it's complete loading.
+	const AirDatepicker = window.AirDatepicker
+	const locale        = locales[document.documentElement.lang]
 	if (!AirDatepicker || !locale) return
 
 	const datePicker = new AirDatepicker(input, { locale })
