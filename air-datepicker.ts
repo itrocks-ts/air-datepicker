@@ -44,7 +44,7 @@ export function airDatePicker(input: HTMLInputElement)
 // Only the final 'export default' line is removed, as it would cause a crash.
 // No worries: this will not generate any code in the transpiled .js file.
 
-declare type AirDatepickerSelector = string | HTMLElement;
+declare type AirDatepickerSelector = string | HTMLElement
 
 export declare type AirDatepickerLocale = {
 	days: string[],
@@ -72,9 +72,9 @@ export declare type AirDatepickerButtonPresets = 'clear' | 'today'
 export declare type AirDatepickerPosition = 'left' | 'left top' | 'left bottom' | 'top' | 'top left' | 'top right' | 'right' | 'right top' | 'right bottom' | 'bottom' | 'bottom left' | 'bottom right'
 export declare type AirDatepickerViews = 'days' | 'months' | 'years'
 export declare type AirDatepickerViewsSingle = 'day' | 'month' | 'year'
-export declare type AirDatepickerDate = string | number | Date;
-export declare type AirDatepickerNavEntry = string | ((dp: AirDatepicker) => string);
-export declare type AirDatepickerDecade = [number, number];
+export declare type AirDatepickerDate = string | number | Date
+export declare type AirDatepickerNavEntry = string | ((dp: AirDatepicker) => string)
+export declare type AirDatepickerDecade = [number, number]
 export declare type AirDatepickerPositionCallback = (
 	{
 		$datepicker,
@@ -158,8 +158,8 @@ export declare type AirDatepickerOptions<E extends HTMLElement = HTMLInputElemen
 	onShow?: (isAnimationComplete: boolean) => void,
 	onHide?: (isAnimationComplete: boolean) => void,
 	onClickDayName?: ({dayIndex, datepicker}: {dayIndex: number, datepicker: AirDatepicker<E>}) => void
-	onBeforeSelect?: ({date, datepicker}: {date: Date, datepicker: AirDatepicker}) => boolean;
-	onFocus?: ({date, datepicker}: {date: Date, datepicker: AirDatepicker}) => void;
+	onBeforeSelect?: ({date, datepicker}: {date: Date, datepicker: AirDatepicker}) => boolean
+	onFocus?: ({date, datepicker}: {date: Date, datepicker: AirDatepicker}) => void
 }
 
 declare class AirDatepicker<E extends HTMLElement = HTMLInputElement> {
@@ -167,7 +167,7 @@ declare class AirDatepicker<E extends HTMLElement = HTMLInputElement> {
 	static defaults: AirDatepickerOptions
 	static version: string
 	static defaultGlobalContainerId: string
-	static buildGlobalContainer: (id?: string) => void;
+	static buildGlobalContainer: (id?: string) => void
 	show: () => void
 	hide: () => void
 	next: () => void
@@ -194,5 +194,5 @@ declare class AirDatepicker<E extends HTMLElement = HTMLInputElement> {
 	focusDate: Date | false
 	visible: boolean
 	disabledDates: Set<string>
-	isDestroyed: boolean;
+	isDestroyed: boolean
 }
