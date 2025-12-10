@@ -20,8 +20,14 @@
 	],
 	"homepage": "https://it.rocks",
 	"keywords": [
+		"air-datepicker",
+		"calendar",
+		"date-picker",
+		"datepicker",
 		"front-end",
-		"it.rocks"
+		"it.rocks",
+		"javascript",
+		"typescript"
 	],
 	"license": "ISC",
 	"module": "./air-datepicker.js",
@@ -35,5 +41,5 @@
 	},
 	"type": "module",
 	"types": "./air-datepicker.d.ts",
-	"version": "0.0.9"
+	"version": "0.0.10"
 }
