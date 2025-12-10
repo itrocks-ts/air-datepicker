@@ -25,9 +25,7 @@
 		"date-picker",
 		"datepicker",
 		"front-end",
-		"it.rocks",
-		"javascript",
-		"typescript"
+		"it.rocks"
 	],
 	"license": "ISC",
 	"module": "./air-datepicker.js",
@@ -41,5 +39,5 @@
 	},
 	"type": "module",
 	"types": "./air-datepicker.d.ts",
-	"version": "0.0.10"
+	"version": "0.0.11"
 }
