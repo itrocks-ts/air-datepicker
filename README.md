@@ -21,7 +21,7 @@ npm i @itrocks/air-datepicker
 `@itrocks/air-datepicker` ships with `air-datepicker` and
 `@itrocks/asset-loader` as dependencies. The helper automatically loads the
 CSS, JS and locale files for you; you only need to make sure your HTTP server
-exposes the usual `/node_modules` static paths.
+exposes the usual `/lib` static paths.
 
 ## Usage
 
@@ -145,13 +145,13 @@ Initialises an `air-datepicker` instance on the given text input.
 
 #### Behaviour
 
-1. Calls `loadCss('/node_modules/air-datepicker/air-datepicker.css')` via
+1. Calls `loadCss('/lib/air-datepicker/air-datepicker.css')` via
    `@itrocks/asset-loader`.
 2. Calls
-   `loadScript('/node_modules/air-datepicker/air-datepicker.js', callback)`
+   `loadScript('/lib/air-datepicker/air-datepicker.js', callback)`
    and waits for the script to be loaded.
 3. Loads the locale file
-   `/node_modules/air-datepicker/locale/{lang}.js`, where `lang` is
+   `/lib/air-datepicker/locale/{lang}.js`, where `lang` is
    `document.documentElement.lang` (for example `en`, `fr`, `de`).
 4. Extracts the locale object from the loaded script and caches it for the
    current `lang`.

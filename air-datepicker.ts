@@ -24,13 +24,13 @@ function init(input: HTMLInputElement)
 
 export function airDatePicker(input: HTMLInputElement)
 {
-	loadCss('/node_modules/air-datepicker/air-datepicker.css')
-	loadScript('/node_modules/air-datepicker/air-datepicker.js', () => init(input))
+	loadCss('/lib/air-datepicker/air-datepicker.css')
+	loadScript('/lib/air-datepicker/air-datepicker.js', () => init(input))
 	const lang = document.documentElement.lang
 	if (locales[lang]) {
 		return
 	}
-	fetch(`/node_modules/air-datepicker/locale/${lang}.js`)
+	fetch(`/lib/air-datepicker/locale/${lang}.js`)
 		.then(response => response.text())
 		.then(code => {
 			const start  = code.indexOf('{', code.indexOf('_default'))
