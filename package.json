@@ -9,8 +9,7 @@
 	},
 	"description": "Simplifies the integration of the air-datepicker component into a web page",
 	"devDependencies": {
-		"@types/node": "^24.10",
-		"typescript": "~5.9"
+		"typescript": "^6.0"
 	},
 	"files": [
 		"LICENSE",
@@ -28,7 +27,6 @@
 		"it.rocks"
 	],
 	"license": "ISC",
-	"module": "./air-datepicker.js",
 	"name": "@itrocks/air-datepicker",
 	"repository": {
 		"type": "git",
@@ -37,7 +35,5 @@
 	"scripts": {
 		"build": "tsc"
 	},
-	"type": "module",
-	"types": "./air-datepicker.d.ts",
-	"version": "0.1.0"
+	"version": "0.1.1"
 }
